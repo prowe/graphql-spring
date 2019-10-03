@@ -1,0 +1,8 @@
+extend type Query {
+    teammates: [Teammate]
+}
+
+type Teammate {
+    id: ID!
+    name: String!
+}
