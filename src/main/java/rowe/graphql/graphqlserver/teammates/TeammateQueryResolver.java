@@ -9,11 +9,13 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class TeammateQueryResolver implements GraphQLQueryResolver {
+    private final TeammateRepository repo;
 
-    public List<Teammate> getTeammates() {
-        return Arrays.asList(
-            new Teammate("Paul"),
-            new Teammate("Ben")
-        );
+    public TeammateQueryResolver(TeammateRepository repo) {
+        this.repo = repo;
+    }
+
+    public Iterable<Teammate> getTeammates() {
+        return repo.findAll();
     }
 }

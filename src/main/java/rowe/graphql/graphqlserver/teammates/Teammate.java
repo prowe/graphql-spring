@@ -2,8 +2,14 @@ package rowe.graphql.graphqlserver.teammates;
 
 import java.util.UUID;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Teammate {
+    @Id
     private String id;
+
     private String name;
 
     public Teammate(){

@@ -6,3 +6,7 @@ type Teammate {
     id: ID!
     name: String!
 }
+
+extend type Mutation {
+    addTeammate(name: String!) : Teammate!
+}
