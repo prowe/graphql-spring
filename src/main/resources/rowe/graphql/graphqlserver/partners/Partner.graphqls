@@ -1,0 +1,12 @@
+extend type Query {
+    partners: [Partner]
+}
+
+type Partner {
+    id: ID!
+    name: String!
+}
+
+extend type Mutation {
+    addPartner(name: String!) : Partner!
+}

@@ -9,10 +9,10 @@ import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import org.springframework.stereotype.Component;
 
 @Component
-public class TeammateMutationResolver implements GraphQLMutationResolver {
+public class AddTeammateMutation implements GraphQLMutationResolver {
     private final TeammateRepository repo;
 
-    public TeammateMutationResolver(TeammateRepository repo) {
+    public AddTeammateMutation(TeammateRepository repo) {
         this.repo = repo;
     }
 

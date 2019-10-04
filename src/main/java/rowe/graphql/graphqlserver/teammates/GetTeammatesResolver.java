@@ -8,10 +8,10 @@ import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import org.springframework.stereotype.Component;
 
 @Component
-public class TeammateQueryResolver implements GraphQLQueryResolver {
+public class GetTeammatesResolver implements GraphQLQueryResolver {
     private final TeammateRepository repo;
 
-    public TeammateQueryResolver(TeammateRepository repo) {
+    public GetTeammatesResolver(TeammateRepository repo) {
         this.repo = repo;
     }
 
