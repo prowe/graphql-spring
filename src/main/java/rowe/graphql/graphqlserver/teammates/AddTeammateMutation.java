@@ -16,8 +16,9 @@ public class AddTeammateMutation implements GraphQLMutationResolver {
         this.repo = repo;
     }
 
-    public Teammate addTeammate(String name) {
+    public Teammate addTeammate(String name, String partnerId) {
         Teammate teammate = new Teammate(name);
+        teammate.setPartnerId(partnerId);
         repo.save(teammate);
         return teammate;
     }

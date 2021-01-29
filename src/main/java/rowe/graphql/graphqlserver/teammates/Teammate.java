@@ -12,6 +12,8 @@ public class Teammate {
 
     private String name;
 
+    private String partnerId;
+
     public Teammate(){
     }
 
@@ -43,5 +45,18 @@ public class Teammate {
      */
     public void setName(String name) {
         this.name = name;
+    }
+
+    /**
+     * @return the partnerId
+     */
+    public String getPartnerId() {
+        return partnerId;
+    }
+    /**
+     * @param partnerId the partnerId to set
+     */
+    public void setPartnerId(String partnerId) {
+        this.partnerId = partnerId;
     }
 }

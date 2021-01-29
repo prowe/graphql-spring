@@ -5,8 +5,11 @@ extend type Query {
 type Teammate {
     id: ID!
     name: String!
+    partner: Partner
 }
 
 extend type Mutation {
-    addTeammate(name: String!) : Teammate!
+    addTeammate(name: String!, partnerId: String) : Teammate!
+
+    updateTeammate(id: String!, name: String!, partnerId: String) : Teammate!
 }
